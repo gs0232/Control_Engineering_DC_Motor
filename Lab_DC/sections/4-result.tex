@@ -1,3 +1,96 @@
 \section{Ergebnisse und Diskussion}
 
-blub
+\subsection{PT2 - Step Response}
+
+Die Step Response representiert das Verhalten des Systems bei einer Spannung von 12 Volt. Die Rohdaten (rot) und die PT2-Übertragungsfunktion (blau) der gemessenen Daten in Abbildung \ref{fig:StepResponse} zeigen eine S-Kurve, welche als typisch für ein PT2-System gilt. Die Übertragungsfunktion wurde anhand von lscurvfit bestimmt, welche den kleinesten quadratischen Abstand zwischen den Daten und der Funktion minimiert. Der finale Wert der Step Response nähert sich einem Endwert von 8.5 an, was als XXX bezeichnet werden kann.
+
+% Wie kann 8.5 interpretiert werden? Was sagt das über die Verstärkung des Systems aus? Was könnte die Ursache für die Abweichung von 12 Volt sein? (z.B. Verluste im System, nicht ideale Komponenten, etc.)
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/res_PT2_StepResponse.jpg}
+    \caption[Step Response des PT2-Systems]{Step Response des Systems. Die aufgenommen und berechneten Daten zeigen eine S-Kurve.}
+    \label{fig:StepResponse}
+\end{figure}
+
+Übertragungsfunktion des PT2-Systems:
+
+\begin{equation}
+    G(s) = \frac{0.7073}{0.00209s^2 + 0.09144s}
+\end{equation}
+
+% Wo fügen wir diese Funktion ein?
+% Richtige Werte noch einfügen!
+
+Die Zeitkonstante $\tau$ beträgt XXX Sekunden, was auf eine relativ schnelle Reaktion des Systems hinweist. Die Dämpfung $\zeta$ wurde auf XXX geschätzt, was auf eine überdämpfte Reaktion hindeutet, da die Kurve leicht über den Endwert hinaus schwingt, bevor sie sich stabilisiert.
+
+% Richtige Interpretation der Werte in der TF noch hinschreiben!
+
+\subsection{Controller Implementation}
+
+% Oben wird beschrieben, wie man von dem PT2 zu PT3 kommt
+% Oben wird beschrieben, wie das mit dem Root Locus und Gain funktioniert und welches Simulink Model dabei rauskommt
+
+Folglich der Bearbeitungsschritte für das Controller Design konnten die Funktionen und Werte in das reale System implementiert und getestet werden. Die aufgenommenen Daten representieren das PT3-System mit den berechneten Koeffizienten für den PID-Controller. In der Tabelle \ref{tab:pid_coefficients} können zu einem die berechnet als auch die angepassten Koeffizienten eingesehen werden, welche zur Verbesserung der Systemstabilität beigetragen haben.
+
+\begin{table}[H]
+    \centering
+    \caption{PID-Koeffizienten für berechnete und angepasste Werte}
+    \label{tab:pid_coefficients}
+    \begin{tabular}{c|c|c}
+    \toprule
+    \textbf{Koeffizient} & \textbf{Berechneter Wert} & \textbf{Angepasster Wert} \\
+    \midrule
+    $ K_{\mathrm{p}} $ & 0.03 & 0.03 \\
+    $ K_{\mathrm{i}} $ & 0.03 & 0.03 \\
+    $ K_{\mathrm{d}} $ & 0.03 & 0.03 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+%Tabelle mit Kp, Ki, Kd, berechnet und angepasst
+
+Zu Beginn erzielten die berechneten Koeffizienten des PID-Controllers nicht das erwünschte Ergebnis. Die Abbildung \ref{fig:PID_ControllerImplementation_bad} zeigt einen temporären Overshoot von etwa 9\%, welcher sich bei Sekunde 1.25 stabilisert. Dies kann auf eine zu hohe Verstärkung zurückgeführt werden, welche das System übersteuert und somit zu einem Überschwingen führt.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/res_PID_ControllerImplementation_bad.jpg}
+    \caption[Reales System mit PID-Controller (berechnete Werte)]{Die vier Plots zeigen den gewünschten Endwert, den Output, den Steady-State-Error und die Stellgröße des Systems. Es ist ein temporärer Overshoot von etwa 9\% zu erkennen, welcher sich bei Sekunde 1.25 stabilisiert.}
+    \label{fig:PID_ControllerImplementation_bad}
+\end{figure}
+
+Nach der Anpassung des XXX Koeffizienten konnte der Overshoot zur Gänze eliminiert werden, was eine Verbesserung der Systemstabilität darstellt. Dies liegt daran, dass der XXX Koeffizient XXX. Die Auswirkung der verschiedenen Koeffzienten kann aus der Abbildung \ref{fig:Koeffizienten_Tabelle} entnommen werden \cite{wikipedia2026}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/Koeffzienten_Tabelle.png}
+    \caption[Auswirkung bei Erhöhung der einzelnen Koeffizienten]{Bei Erhöhung der einzelnen Koeffizienten treten dargestellte Konsequenzen auf, welche berücksichtigt werden müsssen.}
+    \label{fig:Koeffizienten_Tabelle}
+\end{figure}
+
+Die Abbildung \ref{fig:PID_ControllerImplementation_perfect} zeigt die Step Response des Systems mit den angepassten Koeffizienten, welche eine schnellere und genauere Reaktion aufweist.
+
+% Kd Koeffizient?
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/res_PID_ControllerImplementation_perfect.jpg}
+    \caption[Reales System mit PID-Controller (angepasste Werte)]{Die vier Plots zeigen den gewünschten Endwert, den Output, den Steady-State-Error und die Stellgröße des Systems. Nach Anpassung des XXX Koeffizienten konnte der Overshoot eliminiert werden, was eine Verbesserung der Systemstabilität darstellt.}
+    \label{fig:PID_ControllerImplementation_perfect}
+\end{figure}
+
+Zur besseren Veranschaulichung wurden die Output Graphen der einerseits berechneten und andererseits angepassten Werte gegenübergestellt und mit dem erwünschtem Wert verglichen. Das Gleiche wurde auch mit dem Steady-State-Error durgeführt. Beide Vergleiche werden in Abbildung \ref{fig:PID_OutputComparison} und Abbildung \ref{fig:PID_ErrorComparison} dargestellt.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/res_PID_OutputComparison.jpg}
+    \caption[Output-Vergleich der Systeme mit verschiedenen Koeffizienten]{Output-Vergleich der Systeme mit verschiedenen Koeffizienten. Die XXX Funktion beinhaltet die berechenten Werte für den PID-Controller und die XXX Funktion die angepassten Werte.}
+    \label{fig:PID_OutputComparison}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/res_PID_ErrorComparison.png}
+    \caption[Steady-State-Error-Vergleich der Systeme mit verschiedenen Koeffizienten]{Steady-State-Error-Vergleich der Systeme mit verschiedenen Koeffizienten. Die XXX Funktion beinhaltet die berechenten Werte für den PID-Controller und die XXX Funktion die angepassten Werte.}
+    \label{fig:PID_ErrorComparison}
+\end{figure}

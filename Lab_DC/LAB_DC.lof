@@ -3,3 +3,9 @@
 \contentsline {xsect}{Vorbereitende Arbeiten}{2}{section.1}%
 \contentsline {xsect}{Versuchsaufbau und Durchführung}{3}{section.2}%
 \contentsline {xsect}{Ergebnisse und Diskussion}{4}{section.3}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Step Response des PT2-Systems}}{4}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Reales System mit PID-Controller (berechnete Werte)}}{5}{figure.caption.4}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Auswirkung bei Erhöhung der einzelnen Koeffizienten}}{5}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Reales System mit PID-Controller (angepasste Werte)}}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Output-Vergleich der Systeme mit verschiedenen Koeffizienten}}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Steady-State-Error-Vergleich der Systeme mit verschiedenen Koeffizienten}}{7}{figure.caption.8}%
