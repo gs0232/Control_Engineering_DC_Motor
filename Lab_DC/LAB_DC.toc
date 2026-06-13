@@ -1,10 +1,14 @@
 \babel@toc {german}{}\relax 
 \contentsline {section}{\numberline {1}Einleitung und Zielsetzung}{1}{section.1}%
 \contentsline {section}{\numberline {2}Vorbereitende Arbeiten}{2}{section.2}%
-\contentsline {section}{\numberline {3}Versuchsaufbau und Durchführung}{3}{section.3}%
-\contentsline {section}{\numberline {4}Ergebnisse und Diskussion}{4}{section.4}%
-\contentsline {subsection}{\numberline {4.1}PT2 - Step Response}{4}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Controller Implementation}{4}{subsection.4.2}%
-\contentsline {section}{Literaturverzeichnis}{III}{figure.caption.8}%
-\contentsline {section}{Abbildungsverzeichnis}{IV}{section*.9}%
-\contentsline {section}{Tabellenverzeichnis}{V}{section*.10}%
+\contentsline {subsection}{\numberline {2.1}Analytische Modellierung eines DC-Motors}{2}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Bestimmung der Übertragungsfunktionen}{2}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Aufstellen des State-Space Modells}{3}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Identifikation der Systemparameter}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Versuchsaufbau und Durchführung}{5}{section.3}%
+\contentsline {section}{\numberline {4}Ergebnisse und Diskussion}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}PT2 - Step Response}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Controller Implementation}{6}{subsection.4.2}%
+\contentsline {section}{Literaturverzeichnis}{III}{figure.caption.11}%
+\contentsline {section}{Abbildungsverzeichnis}{IV}{section*.12}%
+\contentsline {section}{Tabellenverzeichnis}{V}{section*.13}%
