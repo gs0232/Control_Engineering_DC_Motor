@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex LAB_DC"] 1781370040.29372 "LAB_DC.aux" "LAB_DC.bbl" "LAB_DC" 1781370047.32661 0
+["bibtex LAB_DC"] 1781371727.35079 "LAB_DC.aux" "LAB_DC.bbl" "LAB_DC" 1781371738.93599 0
   "./literature.bib" 1781370006 407 961bb92db7f7e6e7a4717b06abe0789d ""
   "C:/Users/doell/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "LAB_DC.aux" 1781370045 4533 e62f80e31d70645166bce8a9496980cc "pdflatex"
+  "LAB_DC.aux" 1781371736 4533 e62f80e31d70645166bce8a9496980cc "pdflatex"
   (generated)
   "LAB_DC.bbl"
   "LAB_DC.blg"
   (rewritten before read)
-["pdflatex"] 1781370040.78386 "c:/Users/doell/Desktop/Hauke_Person/02_MCI/4_SS26/Regelungstechnik/LAB/DC_Motor/Control_Engineering_DC_Motor/Lab_DC/LAB_DC.tex" "LAB_DC.pdf" "LAB_DC" 1781370047.32755 0
+["pdflatex"] 1781371728.12129 "c:/Users/doell/Desktop/Hauke_Person/02_MCI/4_SS26/Regelungstechnik/LAB/DC_Motor/Control_Engineering_DC_Motor/Lab_DC/LAB_DC.tex" "LAB_DC.pdf" "LAB_DC" 1781371738.93773 0
   "C:/Users/doell/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1763327209 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/doell/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi450/ecsx0800.pk" 1763327181 12492 853c3458254236edc97b1863688799d0 ""
   "C:/Users/doell/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1763327162 28976 2ede151f1329cded0bfe2db6bae28adf ""
@@ -612,15 +612,15 @@
   "C:/Users/doell/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/pst-xkey.sty" 1656236919 1694 74b0201cd6a70abed294b6332f129c41 ""
   "C:/Users/doell/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/doell/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
-  "LAB_DC.aux" 1781370045 4533 e62f80e31d70645166bce8a9496980cc "pdflatex"
-  "LAB_DC.bbl" 1781370040 1250 0be124b10d7ddc99b6351d14749797df "bibtex LAB_DC"
-  "LAB_DC.lof" 1781370045 1074 b210ca0e11a5816f149ffcaab3b06dfd "pdflatex"
-  "LAB_DC.lot" 1781370045 421 4eb3f5271c10d6d24952c590e640e472 "pdflatex"
-  "LAB_DC.mtc" 1781370043 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "LAB_DC.mtc0" 1781370043 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "LAB_DC.out" 1781370045 1501 4a3ab4c371551e0e98d90534f882a0f4 "pdflatex"
+  "LAB_DC.aux" 1781371736 4533 e62f80e31d70645166bce8a9496980cc "pdflatex"
+  "LAB_DC.bbl" 1781371727 1250 0be124b10d7ddc99b6351d14749797df "bibtex LAB_DC"
+  "LAB_DC.lof" 1781371736 1074 b210ca0e11a5816f149ffcaab3b06dfd "pdflatex"
+  "LAB_DC.lot" 1781371736 421 4eb3f5271c10d6d24952c590e640e472 "pdflatex"
+  "LAB_DC.mtc" 1781371733 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "LAB_DC.mtc0" 1781371733 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "LAB_DC.out" 1781371736 1501 4a3ab4c371551e0e98d90534f882a0f4 "pdflatex"
   "LAB_DC.tex" 1781263112 2527 84100e83a34c55261710ef33f0bb27a4 ""
-  "LAB_DC.toc" 1781370045 730 8fc781fb8d163e4cbb2f0c08b550c39d "pdflatex"
+  "LAB_DC.toc" 1781371736 730 8fc781fb8d163e4cbb2f0c08b550c39d "pdflatex"
   "c:/Users/doell/Desktop/Hauke_Person/02_MCI/4_SS26/Regelungstechnik/LAB/DC_Motor/Control_Engineering_DC_Motor/Lab_DC/LAB_DC.tex" 1781263112 2527 84100e83a34c55261710ef33f0bb27a4 ""
   "images/Koeffzienten_Tabelle.png" 1781370006 45942 dc80c66101df33fcd7fd3fac813ac4f3 ""
   "images/res_PID_ControllerImplementation_bad.jpg" 1781370006 173152 fee6c2f601db02b2cc09a45f8b7b3167 ""
