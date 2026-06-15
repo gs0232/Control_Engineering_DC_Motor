@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex LAB_DC"] 1781536225.22211 "LAB_DC.aux" "LAB_DC.bbl" "LAB_DC" 1781536605.49503 0
+["bibtex LAB_DC"] 1781536225.22211 "LAB_DC.aux" "LAB_DC.bbl" "LAB_DC" 1781536888.03432 0
   "./literature.bib" 1781535630 871 555acf5f9107380adcbb1d496c3ec6e3 ""
   "C:/Users/doell/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "LAB_DC.aux" 1781536604 8604 5d65a5721e60aa2835159705f2633e81 "pdflatex"
+  "LAB_DC.aux" 1781536886 8604 5d65a5721e60aa2835159705f2633e81 "pdflatex"
   (generated)
   "LAB_DC.bbl"
   "LAB_DC.blg"
   (rewritten before read)
-["pdflatex"] 1781536598.79246 "c:/Users/doell/Desktop/Hauke_Person/02_MCI/4_SS26/Regelungstechnik/LAB/DC_Motor/Control_Engineering_DC_Motor/Lab_DC/LAB_DC.tex" "LAB_DC.pdf" "LAB_DC" 1781536605.49606 0
+["pdflatex"] 1781536880.9301 "c:/Users/doell/Desktop/Hauke_Person/02_MCI/4_SS26/Regelungstechnik/LAB/DC_Motor/Control_Engineering_DC_Motor/Lab_DC/LAB_DC.tex" "LAB_DC.pdf" "LAB_DC" 1781536888.03525 0
   "C:/Users/doell/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1763327209 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/doell/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi450/ecsx0800.pk" 1763327181 12492 853c3458254236edc97b1863688799d0 ""
   "C:/Users/doell/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1763327162 28976 2ede151f1329cded0bfe2db6bae28adf ""
@@ -624,15 +624,15 @@
   "C:/Users/doell/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/pst-xkey.sty" 1656236919 1694 74b0201cd6a70abed294b6332f129c41 ""
   "C:/Users/doell/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/doell/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
-  "LAB_DC.aux" 1781536604 8604 5d65a5721e60aa2835159705f2633e81 "pdflatex"
+  "LAB_DC.aux" 1781536886 8604 5d65a5721e60aa2835159705f2633e81 "pdflatex"
   "LAB_DC.bbl" 1781536225 1647 45ae783ab9d2b31243c793ab3bae1de0 "bibtex LAB_DC"
-  "LAB_DC.lof" 1781536604 1026 93662559890fd2f6dd3bc591a4c0adf1 "pdflatex"
-  "LAB_DC.lot" 1781536604 425 740334f4917f3bed0d6eeaaf409fe3da "pdflatex"
-  "LAB_DC.mtc" 1781536601 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "LAB_DC.mtc0" 1781536601 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "LAB_DC.out" 1781536604 2968 c01c3ecbddd4396b854da92051c099ef "pdflatex"
+  "LAB_DC.lof" 1781536886 1026 93662559890fd2f6dd3bc591a4c0adf1 "pdflatex"
+  "LAB_DC.lot" 1781536886 425 740334f4917f3bed0d6eeaaf409fe3da "pdflatex"
+  "LAB_DC.mtc" 1781536884 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "LAB_DC.mtc0" 1781536884 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "LAB_DC.out" 1781536886 2968 c01c3ecbddd4396b854da92051c099ef "pdflatex"
   "LAB_DC.tex" 1781521223 2552 1b06c550de69e7f95ec9c6d73b3fffe0 ""
-  "LAB_DC.toc" 1781536604 1413 687b18b7f6ba40c4ec3957404ebef221 "pdflatex"
+  "LAB_DC.toc" 1781536886 1413 687b18b7f6ba40c4ec3957404ebef221 "pdflatex"
   "c:/Users/doell/Desktop/Hauke_Person/02_MCI/4_SS26/Regelungstechnik/LAB/DC_Motor/Control_Engineering_DC_Motor/Lab_DC/LAB_DC.tex" 1781521223 2552 1b06c550de69e7f95ec9c6d73b3fffe0 ""
   "images/HardwareSetup.jpeg" 1781532352 116909 ba17b11bcee94cfb9e754a0a3b89c9f4 ""
   "images/Koeffzienten_Tabelle.png" 1781370006 45942 dc80c66101df33fcd7fd3fac813ac4f3 ""
@@ -644,7 +644,7 @@
   "sections/1-introduction.tex" 1781370006 1118 b240d0d406bb387e8e7157ef9f118606 ""
   "sections/2-preparation.tex" 1781536597 7093 05644c35e5a619edf698da1931e2ac91 ""
   "sections/3-execution.tex" 1781536216 3446 e4a8b9d8f883e38fe3951723d34fa2f7 ""
-  "sections/4-result.tex" 1781534416 4895 f2f9c3ff41ae52357791a1e4fe85a172 ""
+  "sections/4-result.tex" 1781536879 4892 0c472d1b233c8ae0184b00d140382563 ""
   "sub/_definitions/MCI_4C.eps" 1781263112 49883 90ee930b7f62cd426d45fd6ef5af2aca ""
   "sub/_definitions/deckblatt_mci.tex" 1781263112 2618 5f2431df36c43d8c65e6e81ce6fcb324 ""
   "sub/_definitions/definitions_code.tex" 1781263112 1746 995996022a5d028112919a13de8c008e ""
