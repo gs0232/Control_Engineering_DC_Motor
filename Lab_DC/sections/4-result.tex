@@ -16,16 +16,16 @@ Die Step Response representiert das Verhalten des Systems bei einer Spannung von
 Die Übertragungsfunktion des PT2-Systems lautet:
 
 \begin{equation}
-    G_{PT2}(s) = \frac{K}{\tau^2 s^2 + 2\zeta \tau s + 1} = \frac{0.7073}{0.00209s^2 + 0.09144s + 1}
+    G_{PT2}(s) = \frac{K}{\tau^2 s^2 + 2\zeta \tau s + 1} = \frac{0,7073}{0,00209s^2 + 0,09144s + 1}
 \end{equation}
 
 \vspace{0.3cm}
 
-Die Verstärkung $K$ beschreibt den stationären Wert der Übertragungsfunktion und beträgt hier 0.7073. Die Zeitkonstante $\tau$ beschreibt, wie schnell das System auf eine Eingangsänderung reagiert und beträgt in diesem Fall 0.0457 Sekunden, was eine schnelle Reaktionszeit representiert. Die Dämpfung $\zeta$ wurde auf etwa 1 geschätzt, da es keine Überschwingungen beziehungsweise keinen Overshoot gibt.
+Die Verstärkung $K$ beschreibt den stationären Wert der Übertragungsfunktion und beträgt hier 0,7073. Die Zeitkonstante $\tau$ beschreibt, wie schnell das System auf eine Eingangsänderung reagiert und beträgt in diesem Fall 0.0457 Sekunden, was eine schnelle Reaktionszeit representiert. Die Dämpfung $\zeta$ wurde auf etwa 1 geschätzt, da es keine Überschwingungen beziehungsweise keinen Overshoot gibt.
 
 \subsection{Controller Implementation}
 
-Folglich der Bearbeitungsschritte in Kapitel \ref{chap:controller_design} konnten die PT3-Übertragungsfunktion mit dem PID-Controller in das reale System implementiert und getestet werden. Die aufgenommenen Daten representieren das PT3-System mit den berechneten Koeffizienten für den PID-Controller.
+Folglich der Bearbeitungsschritte in Kapitel \ref{chap:identification} konnten die PT3-Übertragungsfunktion mit dem PID-Controller in das reale System implementiert und getestet werden. Die aufgenommenen Daten representieren das PT3-System mit den berechneten Koeffizienten für den PID-Controller.
 
 \vspace{0.3cm}
 
