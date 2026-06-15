@@ -1,8 +1,4 @@
 \section{Vorbereitende Arbeiten}
-WIE GROß UND LANG DARF DAS HIER WERDEN??????
-\newline
-
-Vor der Durchführung der Laboreinheit sind zwei vorbereitende Aufgaben zu erledigen, sodass im Labor schnell und effizient den eigentlichen Aufgaben nachgegangen werden kann.
 \subsection{Analytische Modellierung eines DC-Motors}
 \subsubsection{Bestimmung der Übertragungsfunktionen}
 Die erste Aufgabe besteht darin, zwei Übertragungsfunktionen eines typischen DC-Motors an Hand eines White Box Modellings zu bestimmen.
@@ -69,7 +65,7 @@ Daraus folgt:
 Somit kann die zweite Übertragungsfunktion \ref{eq:DC_TransferFunctions2} aus der ersten finalen Transferfunktion, die in Gleichung \ref{eq:DC_TransferFunction1_final} beschrieben ist, bestimmt werden:
 \begin{equation}
     \label{eq:DC_TransferFunction2_final}
-    G_{p2}(s) = \frac{k_t}{L_{mot}J_{mot},s^2 + (R_{mot}J_{mot}+L_{mot}b_{mot}),s + (R_{mot}b_{mot}+k_e k_t)}
+    G_{p2}(s) = \frac{k_t}{L_{mot} \cdot J_{mot} \cdot s^2 + (R_{mot} \cdot J_{mot} + L_{mot} \cdot b_{mot}) \cdot s + (R_{mot} \cdot b_{mot} + k_e \cdot k_t)}
 \end{equation}
 
 \subsubsection{Aufstellen des State-Space Modells}
@@ -97,7 +93,7 @@ In der Matrixdarstellung ergibt sich somit die folgende Form für die Matrizen $
     \label{eq:DC_StateSpaceMatrices}
     \mathbf{A} = \begin{pmatrix} 0 & 1 & 0 \\ 0 & -\dfrac{b_{mot}}{J_{mot}} & \dfrac{k_t}{J_{mot}} \\ 0 & -\dfrac{k_e}{L_{mot}} & -\dfrac{R_{mot}}{L_{mot}} \end{pmatrix}, \quad \mathbf{B} = \begin{pmatrix} 0 \\ 0 \\ \dfrac{1}{L_{mot}} \end{pmatrix}, \quad \mathbf{C} = \begin{pmatrix} 1 & 0 & 0 \end{pmatrix}, \quad \mathbf{D} = 0
 \end{equation}
-Das resultierende State-Space Modell ermöglicht die Analyse und das Design von Regelungsstrategien für das DC-System.
+Das resultierende State-Space Modell ermöglicht nun die Analyse und das Design von Regelungsstrategien für das DC-System.
 
 
 \subsection{Identifikation der Systemparameter}
@@ -111,7 +107,7 @@ Aus der von der LV-Leiterung bereitgestellten Datei measurement\_data und dem Ma
     \label{fig:PlotRawData}
 \end{figure}
 Abbildung \ref{fig:PlotRawData} zeigt die Rohdaten der Step Response des Systems, welche durch die Anwendung einer Spannung von fünf Volt aufgenommen wurden. 
-Die Rohdaten zeigen eine typische S-Kurve, welche auf ein PT2-System hindeutet. Dabei spiegelt der Plot nicht hundertprozentig die in HIER FEHLT NOCH DAS DOKUMENT VON KIM UND MARCEL vorgegebene Kurve, da in den Rohdaten bereits der Delay von 0,8 Sekunden entfernt wurde.
+Die Rohdaten zeigen eine typische S-Kurve, welche auf ein PT2-System hindeutet. Dabei spiegelt der Plot nicht hundertprozentig die in den Laborinstructions \cite{labinstruction2026} vorgegebene Kurve, da in den Rohdaten bereits der Delay von 0,8 Sekunden entfernt wurde.
 
 \begin{figure}[H]
     \centering
@@ -119,7 +115,7 @@ Die Rohdaten zeigen eine typische S-Kurve, welche auf ein PT2-System hindeutet. 
     \caption[rawDataPT2]{Vergleich der Rohdaten mit gefitteten PT2-Modell.}
     \label{fig:rawDataPT2}
 \end{figure}
-In Abbildung \ref{fig:rawDataPT2} ist ein Vergleich der Rohdaten mit dem gefitteten PT2-Modell zu sehen. Die Übertragungsfunktion wurde anhand von lscurvfit bestimmt, sodass die folgende Transferfunktion des PT2-Ssystems erhalten wurde:
+In Abbildung \ref{fig:rawDataPT2} ist ein Vergleich der Rohdaten mit dem gefitteten PT2-Modell zu sehen. Die Übertragungsfunktion wurde anhand von lsqcurvfit bestimmt, sodass die folgende Transferfunktion des PT2-Systems erhalten wurde:
 \begin{equation}
     \label{eq:PT2_TransferFunction}
     G_\text{PT2}(s) = \frac{5.002}{0.04883s^2 + 0.442s + 1}
