@@ -1,32 +1,60 @@
-load('measurement_data.mat');
-% Spalte 1: Zeit (t) in Sekunden
-% Spalte 2: Eingangsspannung (U_in) in Volt
-% Spalte 3: Ausgangsspannung (U_out) in Volt
-t     = raw_data_new(:, 1);
-U_in  = raw_data_new(:, 2);
-U_out = raw_data_new(:, 3);
+%% Plot raw measurement data
 
-% 2. Plot erstellen
-figure
-hold on;
+%load('measurement_data.mat');
 
-% Daten plotten mit den Farben aus dem Screenshot
-plot(t, U_in, 'LineWidth', 1.2, 'Color', [0.2, 0.6, 0.8]);  % Blau für U_in
-plot(t, U_out, 'LineWidth', 1.2, 'Color', [0.85, 0.33, 0.1]); % Orange/Rot für U_out
+% Daten extrahieren
+t     = raw_data_new(:,1);
+U_in  = raw_data_new(:,2);
+U_out = raw_data_new(:,3);
 
-title('Plot raw measurement data')
-box on;
+% Formatierung
+fontAxis  = 13;
+fontLabel = 15;
+fontTitle = 16;
+fontLegend = 11;
+lineWidth = 1.8;
 
-% 3. Beschriftungen und Achsen anpassen (exakt wie im Screenshot)
-xlabel('Time t /s');
-ylabel('Voltage U /V');
+% Plot
+figure('Color','w','Position',[100 100 900 500])
 
-% Achsenbegrenzung definieren (passend zum Bildausschnitt)
-xlim([0, 2.45]);
-ylim([0, 27]);
+hold on
+grid on
+box on
 
-% 4. Legende hinzufügen und formatieren
-lgd = legend('U_{in}', 'U_{out}', 'Location', 'southeast');
-lgd.FontSize = 14;
+plot(t, U_in, ...
+    'LineWidth', lineWidth, ...
+    'Color', [0.2, 0.6, 0.8])
 
-hold off;
+plot(t, U_out, ...
+    'LineWidth', lineWidth, ...
+    'Color', [0.85, 0.33, 0.1])
+
+% Titel und Beschriftung
+title('Raw Measurement Data', ...
+    'FontSize', fontTitle, ...
+    'FontWeight', 'bold')
+
+xlabel('Time (s)', ...
+    'FontSize', fontLabel)
+
+ylabel('Voltage (V)', ...
+    'FontSize', fontLabel)
+
+% Achsenbegrenzungen
+xlim([0 2.45])
+ylim([0 27])
+
+% Achsen formatieren
+set(gca, ...
+    'FontSize', fontAxis, ...
+    'LineWidth', 1.1)
+
+% Legende
+legend({'U_{in}', 'U_{out}'}, ...
+    'Location', 'southeast', ...
+    'FontSize', fontLegend)
+
+% Export
+exportgraphics(gcf, ...
+    'RawMeasurementData.png', ...
+    'Resolution', 300)
