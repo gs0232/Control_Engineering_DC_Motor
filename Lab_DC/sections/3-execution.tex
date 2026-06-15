@@ -29,35 +29,3 @@ sind: Im Skript \texttt{SystemID\_Setup} wurden unter \texttt{Desktop Real-Time}
 \texttt{Hardware Settings} im Register \texttt{Solver} Start- und Endzeit auf $0$ bzw. 
 $1{,}5$\,s sowie ein Fixed-step-Solver mit Schrittweite $0{,}0001$\,s eingestellt. Im 
 Register \texttt{Code Generation} wurde als System Target File \texttt{sldrt.tlc} gewählt.
-
-
-\subsection{Identification des Systems}
-\label{chap:identification}
-Zur Identifikation der Parameter wurde das Simulink-Modell \texttt{EncoderRead.slx} 
-(siehe Abbildung \ref{fig:SimulinkID}) verwendet. Im Block \texttt{Speed Control} wurde 
-ein Step Input mit einer Amplitude von $12$\,V ohne Delay eingestellt.
-Die Sprungantwort wurde aufgezeichnet, wobei der Block \texttt{RPM Calculation + filter} 
-die Winkelgeschwindigkeit $\omega$ in rpm sowie die Winkelposition $\theta$ in Grad liefert 
-(Abbildung \ref{fig:RawData}). Da das System anhand von $\omega$ modelliert wird, wurde die 
-Drehzahl gemäß $\omega\,[\text{rad/s}] = \omega\,[\text{rpm}] \cdot \tfrac{2\pi}{60}$ 
-umgerechnet.
-Mittels Least-Squares-Fitting wurde aus den umgerechneten Daten eine Übertragungsfunktion 
-zweiter Ordnung gemäß Gleichung \ref{eq:PT2} bestimmt, welche den Zusammenhang zwischen 
-Eingangsspannung $u$ und Winkelgeschwindigkeit $\omega$ beschreibt, $G_{p,\omega}(s) = \Omega(s)/U(s)$:
-\begin{equation}
-    \label{eq:PT2}
-    PT2(s) = \frac{K}{(\tau_1 s + 1)(\tau_2 s + 1)}
-\end{equation}
-Die Sprungantwort dieses Modells für $u=12$\,V wurde simuliert und mit den Messdaten 
-verglichen.
-Da für die Regelung die Winkelposition $\theta$ benötigt wird, muss das Modell durch 
-Integration von $\omega$ zu $\theta$ erweitert werden. Es ergibt sich ein PT3-System:
-\begin{equation}
-    \label{eq:PT3}
-    PT3(s) = G_p(s) = \frac{\Theta(s)}{U(s)} = \frac{\Omega(s)}{sU(s)} = \frac{1}{s}\,PT2(s)
-\end{equation}
-$G_p(s)$ beschreibt den Zusammenhang zwischen $u$ und $\theta$ und bildet die Grundlage für 
-den Regler in Kapitel \ref{chap:controller_design}. Die genauen Werte und die Diskussion sind in Abschnitt \ref{chap:4.3} zu finden.
-
-\subsection{Controller Design}
-\label{chap:controller_design}
