@@ -8,12 +8,10 @@
 \contentsline {section}{\numberline {3}Versuchsaufbau und Durchführung}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Hardware Setup}{5}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Software Setup}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Identification des Systems}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Controller Design}{5}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Controller Implementierung}{5}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Ergebnisse und Diskussion}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}PT2 - Step Response}{6}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Controller Implementation}{6}{subsection.4.2}%
-\contentsline {section}{Literaturverzeichnis}{III}{figure.caption.8}%
-\contentsline {section}{Abbildungsverzeichnis}{IV}{section*.9}%
-\contentsline {section}{Tabellenverzeichnis}{V}{section*.10}%
+\contentsline {subsection}{\numberline {3.3}Identifikation des Systems}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Ergebnisse und Diskussion}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}PT2 - Step Response}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Controller Implementation}{7}{subsection.4.2}%
+\contentsline {section}{Literaturverzeichnis}{III}{figure.caption.9}%
+\contentsline {section}{Abbildungsverzeichnis}{IV}{section*.10}%
+\contentsline {section}{Tabellenverzeichnis}{V}{section*.11}%

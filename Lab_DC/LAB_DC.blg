@@ -11,52 +11,53 @@ Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: literature.bib
 Warning--entry type for "wikipedia2026" isn't style-file defined
---line 8 of file literature.bib
+--line 13 of file literature.bib
+Warning--I didn't find a database entry for "DataSheetBNC"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty note in labinstruction2026
 
 Done.
-You've used 2 entries,
+You've used 4 entries,
             4087 wiz_defined-function locations,
-            835 strings with 7583 characters,
-and the built_in function-call counts, 730 in all, are:
-= -- 51
-> -- 8
+            841 strings with 7701 characters,
+and the built_in function-call counts, 1380 in all, are:
+= -- 97
+> -- 16
 < -- 0
-+ -- 4
-- -- 2
-* -- 43
-:= -- 158
-add.period$ -- 4
-call.type$ -- 2
-change.case$ -- 2
++ -- 8
+- -- 4
+* -- 59
+:= -- 270
+add.period$ -- 8
+call.type$ -- 4
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 49
-empty$ -- 58
-format.name$ -- 2
-if$ -- 136
+cite$ -- 5
+duplicate$ -- 109
+empty$ -- 130
+format.name$ -- 4
+if$ -- 282
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 11
-newline$ -- 31
-num.names$ -- 2
-pop$ -- 29
+int.to.str$ -- 4
+missing$ -- 25
+newline$ -- 37
+num.names$ -- 4
+pop$ -- 71
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 48
+skip$ -- 102
 stack$ -- 0
-substring$ -- 2
-swap$ -- 28
+substring$ -- 4
+swap$ -- 58
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 2
+type$ -- 4
 warning$ -- 1
-while$ -- 2
-width$ -- 3
-write$ -- 39
-(There were 5 warnings)
+while$ -- 4
+width$ -- 5
+write$ -- 53
+(There were 3 warnings)

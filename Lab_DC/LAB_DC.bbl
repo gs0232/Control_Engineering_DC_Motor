@@ -25,6 +25,13 @@
 M.~C. Innsbruck, ``Laboratory instruction - modelling and control of dc motor
   speed and position,'' 2026.
 
+\bibitem{DataSheetEncoder}
+V.~Technologies, ``Quick assembly two and three channel optical encoders,''
+  2012.
+
+\bibitem{DataSheetDAQ}
+N.~Instruments, ``X series user manual,'' 2019.
+
 \bibitem{wikipedia2026}
 \BIBentryALTinterwordspacing
 Wikipedia, ``Pid controller,'' 2026. [Online]. Available:
