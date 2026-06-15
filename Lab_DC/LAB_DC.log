@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.16)  15 JUN 2026 17:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.16)  15 JUN 2026 17:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1971,16 +1971,20 @@ Package pdftex.def Info: images/LabDC_SchemaDCSystem.png  used on input line 8.
  [2
 
  <./images/LabDC_SchemaDCSystem.png>]
-<images/Plot_rawData.png, id=190, 966.009pt x 563.706pt>
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
+
+ []
+
+<images/Plot_rawData.png, id=188, 966.009pt x 563.706pt>
 File: images/Plot_rawData.png Graphic file (type png)
 <use images/Plot_rawData.png>
-Package pdftex.def Info: images/Plot_rawData.png  used on input line 104.
+Package pdftex.def Info: images/Plot_rawData.png  used on input line 111.
 (pdftex.def)             Requested size: 256.07741pt x 149.42438pt.
- [3]
+[3]
 <images/Vergleich_rawDataPT2.png, id=207, 968.418pt x 566.115pt>
 File: images/Vergleich_rawDataPT2.png Graphic file (type png)
 <use images/Vergleich_rawDataPT2.png>
-Package pdftex.def Info: images/Vergleich_rawDataPT2.png  used on input line 113.
+Package pdftex.def Info: images/Vergleich_rawDataPT2.png  used on input line 120.
 (pdftex.def)             Requested size: 256.07741pt x 149.6915pt.
 ) [4 <./images/Plot_rawData.png (PNG copy)> <./images/Vergleich_rawDataPT2.png (PNG copy)>] (sections/3-execution.tex
 <images/HardwareSetup.jpeg, id=217, 1606.0pt x 755.82375pt>
@@ -2052,13 +2056,13 @@ Package rerunfilecheck Info: File `LAB_DC.out' has not changed.
 Here is how much of TeX's memory you used:
  75075 strings out of 467871
  1864801 string characters out of 5418375
- 2836656 words of memory out of 5000000
+ 2837656 words of memory out of 5000000
  102769 multiletter control sequences out of 15000+600000
  651526 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,13n,124p,845b,1158s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1200.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ecsx0800.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcsx0600.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx0800.pk><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on LAB_DC.pdf (14 pages, 764445 bytes).
+Output written on LAB_DC.pdf (14 pages, 764491 bytes).
 PDF statistics:
  877 PDF objects out of 1000 (max. 8388607)
  64 named destinations out of 1000 (max. 500000)
