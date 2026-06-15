@@ -2,36 +2,49 @@
 
 \subsection{PT2 - Step Response}
 
-Die Step Response representiert das Verhalten des Systems bei einer Spannung von 12 Volt. Die Rohdaten (rot) und die PT2-Übertragungsfunktion (blau) der gemessenen Daten in Abbildung \ref{fig:StepResponse} zeigen eine S-Kurve, welche als typisch für ein PT2-System gilt. Die Übertragungsfunktion wurde anhand von lscurvfit bestimmt, welche den kleinesten quadratischen Abstand zwischen den Daten und der Funktion minimiert. Der finale Wert der Step Response nähert sich einem Endwert von 8.5 an, was als XXX bezeichnet werden kann.
-
-% Wie kann 8.5 interpretiert werden? Was sagt das über die Verstärkung des Systems aus? Was könnte die Ursache für die Abweichung von 12 Volt sein? (z.B. Verluste im System, nicht ideale Komponenten, etc.)
+Die Step Response representiert das Verhalten des Systems bei einer Spannung von 12 Volt. Die Rohdaten (rot) und die PT2-Übertragungsfunktion (blau) der gemessenen Daten in Abbildung \ref{fig:StepResponse} zeigen eine S-Kurve, welche als typisch für ein PT2-System gilt. Die Übertragungsfunktion wurde anhand von LS-Curvefit bestimmt, einem Algorithmus, der den kleinesten quadratischen Abstand zwischen der gemessenen Daten und der korrelierenden Datenpunkte der Funktion berechnet. Der finale Wert der Step Response nähert sich einem Endwert von 8.5 an. Das berechnete System zeigt eine hohe Korrelation zum gemessenen System.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{images/res_PT2_StepResponse.jpg}
-    \caption[Step Response des PT2-Systems]{Step Response des Systems. Die aufgenommen und berechneten Daten zeigen eine S-Kurve.}
+    \caption[Step Response des PT2-Systems]{Step Response des Systems. Eine Gegenüberstellung der gemessenen Daten und der berechneten Übertragungsfunktion zeigen eine S-Kurve.}
     \label{fig:StepResponse}
 \end{figure}
 
-Übertragungsfunktion des PT2-Systems:
+Die Übertragungsfunktion des PT2-Systems lautet:
 
 \begin{equation}
-    G(s) = \frac{0.7073}{0.00209s^2 + 0.09144s}
+    G_{PT2}(s) = \frac{K}{\tau^2 s^2 + 2\zeta \tau s + 1} = \frac{0.7073}{0.00209s^2 + 0.09144s + 1}
 \end{equation}
 
-% Wo fügen wir diese Funktion ein?
-% Richtige Werte noch einfügen!
+\vspace{0.3cm}
 
-Die Zeitkonstante $\tau$ beträgt XXX Sekunden, was auf eine relativ schnelle Reaktion des Systems hinweist. Die Dämpfung $\zeta$ wurde auf XXX geschätzt, was auf eine überdämpfte Reaktion hindeutet, da die Kurve leicht über den Endwert hinaus schwingt, bevor sie sich stabilisiert.
-
-% Richtige Interpretation der Werte in der TF noch hinschreiben!
+Die Verstärkung $K$ beschreibt den stationären Wert der Übertragungsfunktion und beträgt hier 0.7073. Die Zeitkonstante $\tau$ beschreibt, wie schnell das System auf eine Eingangsänderung reagiert und beträgt in diesem Fall 0.0457 Sekunden, was eine schnelle Reaktionszeit representiert. Die Dämpfung $\zeta$ wurde auf etwa 1 geschätzt, da es keine Überschwingungen beziehungsweise keinen Overshoot gibt.
 
 \subsection{Controller Implementation}
 
-% Oben wird beschrieben, wie man von dem PT2 zu PT3 kommt
-% Oben wird beschrieben, wie das mit dem Root Locus und Gain funktioniert und welches Simulink Model dabei rauskommt
+Folglich der Bearbeitungsschritte in Kapitel \ref{chap:controller_design} konnten die PT3-Übertragungsfunktion mit dem PID-Controller in das reale System implementiert und getestet werden. Die aufgenommenen Daten representieren das PT3-System mit den berechneten Koeffizienten für den PID-Controller.
 
-Folglich der Bearbeitungsschritte für das Controller Design konnten die Funktionen und Werte in das reale System implementiert und getestet werden. Die aufgenommenen Daten representieren das PT3-System mit den berechneten Koeffizienten für den PID-Controller. In der Tabelle \ref{tab:pid_coefficients} können zu einem die berechnet als auch die angepassten Koeffizienten eingesehen werden, welche zur Verbesserung der Systemstabilität beigetragen haben.
+\vspace{0.3cm}
+
+Zu Beginn erzielten die berechneten Koeffizienten des PID-Controllers nicht das erwünschte Ergebnis einer stabilen Systemantwort. Die originalen Daten werden in Abbildung \ref{fig:PID_ControllerImplementation} in rot dargestellt. Der Output zeigt einen temporären Overshoot von etwa 9\%, welcher sich bei Sekunde 1.25 stabilisert. Dies kann auf eine zu hohe Verstärkung zurückgeführt werden, welche auch beim Control Value sichtbar ist. Das System wird somit übersteuert und führt zu einem Überschwingen.
+
+\vspace{0.3cm}
+
+Die korrigierte Version des System mit dem PID-Controller wird ebenfalls in Abbildung \ref{fig:PID_ControllerImplementation} dargestellt, diesmal in blau. Es ist zu erkennen, dass sich das System ohne Overshoot auf dem gewünschten Endwert von 90° stabilisiert. Somit reduziert sich auch der Steady-State-Error auf 0.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{plots/res_PID_Comparison.png}
+    \caption[Reales System mit PID-Controller-Implementierung]{Die vier Plots zeigen den gewünschten Endwert, den Output, den Steady-State-Error und die Stellgröße des Systems. Es werden die originalen Werte mit den angepassten Werten des PID-Controllersverglichen.}
+    \label{fig:PID_ControllerImplementation}
+\end{figure}
+
+Nach Anpassung des $K_p$ und $K_d$ Koeffizienten konnte der Overshoot zur Gänze eliminiert werden, was eine Verbesserung der Systemstabilität darstellt. Dies liegt daran, dass $K_p$ den Steady-State-Error minimiert und $K_d$ mithilfe von Differenzialgleichungen den Overshoot und die Settling Time beeinflusst.
+
+\vspace{0.3cm}
+
+In der Tabelle \ref{tab:pid_coefficients} können zu einem die original-berechneten als auch die angepassten Koeffizienten eingesehen werden, welche zur Verbesserung der Systemstabilität beigetragen haben.
 
 \begin{table}[H]
     \centering
@@ -39,58 +52,20 @@ Folglich der Bearbeitungsschritte für das Controller Design konnten die Funktio
     \label{tab:pid_coefficients}
     \begin{tabular}{c|c|c}
     \toprule
-    \textbf{Koeffizient} & \textbf{Berechneter Wert} & \textbf{Angepasster Wert} \\
+    \textbf{Koeffizient} & \textbf{Originaler Wert} & \textbf{Angepasster Wert} \\
     \midrule
-    $ K_{\mathrm{p}} $ & 0.03 & 0.03 \\
-    $ K_{\mathrm{i}} $ & 0.03 & 0.03 \\
-    $ K_{\mathrm{d}} $ & 0.03 & 0.03 \\
+    $ K_{\mathrm{p}} $ & 37,11 & 5 \\
+    $ K_{\mathrm{i}} $ & 0,1435 & 0,1435 \\
+    $ K_{\mathrm{d}} $ & 0,035875 & 1 \\
     \bottomrule
     \end{tabular}
     \end{table}
 
-%Tabelle mit Kp, Ki, Kd, berechnet und angepasst
-
-Zu Beginn erzielten die berechneten Koeffizienten des PID-Controllers nicht das erwünschte Ergebnis. Die Abbildung \ref{fig:PID_ControllerImplementation_bad} zeigt einen temporären Overshoot von etwa 9\%, welcher sich bei Sekunde 1.25 stabilisert. Dies kann auf eine zu hohe Verstärkung zurückgeführt werden, welche das System übersteuert und somit zu einem Überschwingen führt.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{images/res_PID_ControllerImplementation_bad.jpg}
-    \caption[Reales System mit PID-Controller (berechnete Werte)]{Die vier Plots zeigen den gewünschten Endwert, den Output, den Steady-State-Error und die Stellgröße des Systems. Es ist ein temporärer Overshoot von etwa 9\% zu erkennen, welcher sich bei Sekunde 1.25 stabilisiert.}
-    \label{fig:PID_ControllerImplementation_bad}
-\end{figure}
-
-Nach der Anpassung des XXX Koeffizienten konnte der Overshoot zur Gänze eliminiert werden, was eine Verbesserung der Systemstabilität darstellt. Dies liegt daran, dass der XXX Koeffizient XXX. Die Auswirkung der verschiedenen Koeffzienten kann aus der Abbildung \ref{fig:Koeffizienten_Tabelle} entnommen werden \cite{wikipedia2026}.
+Die Auswirkung der verschiedenen Koeffzienten kann aus der Abbildung \ref{fig:Koeffizienten_Tabelle} entnommen werden \cite{wikipedia2026}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{images/Koeffzienten_Tabelle.png}
     \caption[Auswirkung bei Erhöhung der einzelnen Koeffizienten]{Bei Erhöhung der einzelnen Koeffizienten treten dargestellte Konsequenzen auf, welche berücksichtigt werden müsssen.}
     \label{fig:Koeffizienten_Tabelle}
-\end{figure}
-
-Die Abbildung \ref{fig:PID_ControllerImplementation_perfect} zeigt die Step Response des Systems mit den angepassten Koeffizienten, welche eine schnellere und genauere Reaktion aufweist.
-
-% Kd Koeffizient?
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{images/res_PID_ControllerImplementation_perfect.jpg}
-    \caption[Reales System mit PID-Controller (angepasste Werte)]{Die vier Plots zeigen den gewünschten Endwert, den Output, den Steady-State-Error und die Stellgröße des Systems. Nach Anpassung des XXX Koeffizienten konnte der Overshoot eliminiert werden, was eine Verbesserung der Systemstabilität darstellt.}
-    \label{fig:PID_ControllerImplementation_perfect}
-\end{figure}
-
-Zur besseren Veranschaulichung wurden die Output Graphen der einerseits berechneten und andererseits angepassten Werte gegenübergestellt und mit dem erwünschtem Wert verglichen. Das Gleiche wurde auch mit dem Steady-State-Error durgeführt. Beide Vergleiche werden in Abbildung \ref{fig:PID_OutputComparison} und Abbildung \ref{fig:PID_ErrorComparison} dargestellt.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{plots/res_PID_OutputComparison.png}
-    \caption[Output-Vergleich der Systeme mit verschiedenen Koeffizienten]{Output-Vergleich der Systeme mit verschiedenen Koeffizienten. Die XXX Funktion beinhaltet die berechenten Werte für den PID-Controller und die XXX Funktion die angepassten Werte.}
-    \label{fig:PID_OutputComparison}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{plots/res_PID_ErrorComparison.png}
-    \caption[Steady-State-Error-Vergleich der Systeme mit verschiedenen Koeffizienten]{Steady-State-Error-Vergleich der Systeme mit verschiedenen Koeffizienten. Die XXX Funktion beinhaltet die berechenten Werte für den PID-Controller und die XXX Funktion die angepassten Werte.}
-    \label{fig:PID_ErrorComparison}
 \end{figure}
