@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex LAB_DC"] 1781541792.75063 "LAB_DC.aux" "LAB_DC.bbl" "LAB_DC" 1781541942.91882 0
+["bibtex LAB_DC"] 1781541949.14756 "LAB_DC.aux" "LAB_DC.bbl" "LAB_DC" 1781541953.05786 0
   "./literature.bib" 1781537136 871 555acf5f9107380adcbb1d496c3ec6e3 ""
   "C:/Users/gwigg/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "LAB_DC.aux" 1781541942 8982 2fea28317e2d23d46489724bce274266 "pdflatex"
+  "LAB_DC.aux" 1781541952 8982 2fea28317e2d23d46489724bce274266 "pdflatex"
   (generated)
   "LAB_DC.bbl"
   "LAB_DC.blg"
   (rewritten before read)
-["pdflatex"] 1781541939.40419 "c:/Users/gwigg/Sophia_Gwiggner/MCI/MGST_4/Control_Engineering_DC_Motor/Lab_DC/LAB_DC.tex" "LAB_DC.pdf" "LAB_DC" 1781541942.91933 0
+["pdflatex"] 1781541949.48226 "c:/Users/gwigg/Sophia_Gwiggner/MCI/MGST_4/Control_Engineering_DC_Motor/Lab_DC/LAB_DC.tex" "LAB_DC.pdf" "LAB_DC" 1781541953.05843 0
   "C:/Users/gwigg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1765707993 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/gwigg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi450/ecsx0800.pk" 1765707811 12492 f0de68e93288968641efd42d995bba85 ""
   "C:/Users/gwigg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1765707799 28976 e44e2ec1b979763781be99c381d56ff3 ""
@@ -624,15 +624,15 @@
   "C:/Users/gwigg/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/pst-xkey.sty" 1656236919 1694 74b0201cd6a70abed294b6332f129c41 ""
   "C:/Users/gwigg/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/gwigg/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
-  "LAB_DC.aux" 1781541942 8982 2fea28317e2d23d46489724bce274266 "pdflatex"
-  "LAB_DC.bbl" 1781541792 1647 45ae783ab9d2b31243c793ab3bae1de0 "bibtex LAB_DC"
-  "LAB_DC.lof" 1781541942 1142 9ad518ab01fa268b7ec329e2a6fac5b9 "pdflatex"
-  "LAB_DC.lot" 1781541942 426 fe4d5e9268386432bbe3a28fbd905dd6 "pdflatex"
-  "LAB_DC.mtc" 1781541940 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "LAB_DC.mtc0" 1781541940 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "LAB_DC.out" 1781541942 3115 ef21124dda099de02309e513c0c204d9 "pdflatex"
+  "LAB_DC.aux" 1781541952 8982 2fea28317e2d23d46489724bce274266 "pdflatex"
+  "LAB_DC.bbl" 1781541949 1647 45ae783ab9d2b31243c793ab3bae1de0 "bibtex LAB_DC"
+  "LAB_DC.lof" 1781541952 1142 9ad518ab01fa268b7ec329e2a6fac5b9 "pdflatex"
+  "LAB_DC.lot" 1781541952 426 fe4d5e9268386432bbe3a28fbd905dd6 "pdflatex"
+  "LAB_DC.mtc" 1781541951 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "LAB_DC.mtc0" 1781541951 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "LAB_DC.out" 1781541952 3115 ef21124dda099de02309e513c0c204d9 "pdflatex"
   "LAB_DC.tex" 1781521629 2552 1b06c550de69e7f95ec9c6d73b3fffe0 ""
-  "LAB_DC.toc" 1781541942 1497 ce0004ab3999a0eb8dcf5709dca57b64 "pdflatex"
+  "LAB_DC.toc" 1781541952 1497 ce0004ab3999a0eb8dcf5709dca57b64 "pdflatex"
   "c:/Users/gwigg/Sophia_Gwiggner/MCI/MGST_4/Control_Engineering_DC_Motor/Lab_DC/LAB_DC.tex" 1781521629 2552 1b06c550de69e7f95ec9c6d73b3fffe0 ""
   "images/HardwareSetup.jpeg" 1781539892 119988 1c527f2d2c27caa3d28a417bc0f26d76 ""
   "images/Koeffzienten_Tabelle.png" 1781274037 45942 dc80c66101df33fcd7fd3fac813ac4f3 ""
