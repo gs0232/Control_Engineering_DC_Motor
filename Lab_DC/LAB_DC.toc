@@ -10,9 +10,9 @@
 \contentsline {subsection}{\numberline {3.2}Software Setup}{5}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Identifikation des Systems}{5}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Controller Design}{6}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Ergebnisse und Diskussion}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}PT2 - Step Response}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Controller Implementation}{7}{subsection.4.2}%
+\contentsline {section}{\numberline {4}Ergebnisse und Diskussion}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}PT2 - Step Response}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Controller Implementation}{8}{subsection.4.2}%
 \contentsline {section}{Literaturverzeichnis}{III}{figure.caption.10}%
 \contentsline {section}{Abbildungsverzeichnis}{IV}{section*.11}%
 \contentsline {section}{Tabellenverzeichnis}{V}{section*.12}%
