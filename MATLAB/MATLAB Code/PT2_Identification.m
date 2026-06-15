@@ -14,5 +14,5 @@ sys_s = tf([1], [1 0])
 
 sys_pos = series(sys_speed, sys_s)
 
-figure
-rlocus(sys_pos) % Gain 62, P.O. 100%
+figure;
+rlocus(sys_pos); % Gain 62, P.O. 100%
