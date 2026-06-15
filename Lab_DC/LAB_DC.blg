@@ -12,6 +12,9 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: literature.bib
 Warning--entry type for "wikipedia2026" isn't style-file defined
 --line 8 of file literature.bib
+Warning--I didn't find a database entry for "DataSheetEncoder"
+Warning--I didn't find a database entry for "DataSheetDAQ"
+Warning--I didn't find a database entry for "DataSheetBNC"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
