@@ -12,6 +12,6 @@
 \contentsline {section}{\numberline {4}Ergebnisse und Diskussion}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}PT2 - Step Response}{7}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Controller Implementation}{7}{subsection.4.2}%
-\contentsline {section}{Literaturverzeichnis}{III}{figure.caption.9}%
-\contentsline {section}{Abbildungsverzeichnis}{IV}{section*.10}%
-\contentsline {section}{Tabellenverzeichnis}{V}{section*.11}%
+\contentsline {section}{Literaturverzeichnis}{III}{figure.caption.10}%
+\contentsline {section}{Abbildungsverzeichnis}{IV}{section*.11}%
+\contentsline {section}{Tabellenverzeichnis}{V}{section*.12}%

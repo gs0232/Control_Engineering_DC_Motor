@@ -34,10 +34,15 @@ Register \texttt{Code Generation} wurde als System Target File \texttt{sldrt.tlc
 Zur Identifikation der Parameter wurde das Simulink-Modell \texttt{EncoderRead.slx} 
 (siehe Abbildung \ref{fig:SimulinkID}) verwendet. Im Block \texttt{Speed Control} wurde 
 ein Step Input mit einer Amplitude von $12$\,V ohne Delay geschalten.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/Simulink_Motor_modell.jpeg}
+    \caption[Simulink Modell Systemidentifikation]{Simulink-Modell für die Systemidentifikation.}
+    \label{fig:SimulinkID}
+\end{figure}
 
 Die Sprungantwort wurde aufgezeichnet, wobei der Block \texttt{RPM Calculation + filter} 
-die Winkelgeschwindigkeit $\omega$ in rpm sowie die Winkelposition $\theta$ in Grad liefert 
-(Abbildung \ref{fig:RawData}). Da das System anhand von $\omega$ modelliert wird, wurde die 
+die Winkelgeschwindigkeit $\omega$ in rpm sowie die Winkelposition $\theta$ in Grad liefert. Da das System anhand von $\omega$ modelliert wird, wurde die 
 Drehzahl gemäß $\omega\,[\text{rad/s}] = \omega\,[\text{rpm}] \cdot \tfrac{2\pi}{60}$ 
 umgerechnet.
 
