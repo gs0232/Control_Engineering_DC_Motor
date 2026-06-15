@@ -103,7 +103,7 @@ Das resultierende State-Space Modell ermöglicht nun die Analyse und das Design 
 \newline
 
 \subsection{Identifikation der Systemparameter}
-Aus der von der LV-Leiterung bereitgestellten Datei measurement\_data und dem Matlab Skript prepWork32 konnte folgende Abbildung erstellt werden.
+Aus der von der LV-Leitung bereitgestellten Datei $measurement\_data$ und dem MATLAB Skript $prepWork32$ konnte folgende Abbildung erstellt werden.
 Die Skripte sind in der Zip-Datei beigefügt.
 \begin{figure}[H]
     \centering
@@ -111,8 +111,8 @@ Die Skripte sind in der Zip-Datei beigefügt.
     \caption[PlotRawData]{Rohdaten der Step Response.}
     \label{fig:PlotRawData}
 \end{figure}
-Abbildung \ref{fig:PlotRawData} zeigt die Rohdaten der Step Response des Systems, welche durch die Anwendung einer Spannung von fünf Volt aufgenommen wurden. 
-Die Rohdaten zeigen eine typische S-Kurve, welche auf ein PT2-System hindeutet. Dabei spiegelt der Plot nicht hundertprozentig die in den Laborinstructions \cite{labinstruction2026} vorgegebene Kurve, da in den Rohdaten bereits der Delay von 0,8 Sekunden entfernt wurde.
+Abbildung \ref{fig:PlotRawData} zeigt die Rohdaten der Step Response des Systems, welche durch die Anwendung einer Spannung von 5 Volt aufgenommen wurden. 
+Die Rohdaten zeigen eine typische S-Kurve, welche auf ein PT2-System hindeutet. Dabei spiegelt der Plot nicht hundertprozentig die in den Laborinstructions vorgegebene Kurve, da in den Rohdaten bereits der Delay von 0,8 Sekunden entfernt wurde \cite{labinstruction2026}.
 
 \begin{figure}[H]
     \centering
@@ -120,8 +120,8 @@ Die Rohdaten zeigen eine typische S-Kurve, welche auf ein PT2-System hindeutet. 
     \caption[rawDataPT2]{Vergleich der Rohdaten mit gefitteten PT2-Modell.}
     \label{fig:rawDataPT2}
 \end{figure}
-In Abbildung \ref{fig:rawDataPT2} ist ein Vergleich der Rohdaten mit dem gefitteten PT2-Modell zu sehen. Die Übertragungsfunktion wurde anhand von lsqcurvfit bestimmt, sodass die folgende Transferfunktion des PT2-Systems erhalten wurde:
+In Abbildung \ref{fig:rawDataPT2} ist ein Vergleich der Rohdaten mit dem gefitteten PT2-Modell zu sehen. Die Übertragungsfunktion wurde anhand von Least-Squares-Fitting bestimmt, sodass die folgende Transferfunktion des PT2-Systems erhalten wurde:
 \begin{equation}
     \label{eq:PT2_TransferFunction}
-    G_\text{PT2}(s) = \frac{5.002}{0.04883s^2 + 0.442s + 1}
+    G_\text{PT2test}(s) = \frac{5.002}{0.04883s^2 + 0.442s + 1}
 \end{equation}
