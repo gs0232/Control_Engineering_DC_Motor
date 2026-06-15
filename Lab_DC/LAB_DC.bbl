@@ -22,19 +22,23 @@
 \BIBdecl
 
 \bibitem{labinstruction2026}
-M.~C. Innsbruck, ``Laboratory instruction - modelling and control of dc motor
-  speed and position,'' 2026.
+{Management Center Innsbruck}, ``Laboratory instruction - modelling and control
+  of dc motor speed and position,'' 2026, unpublished laboratory instruction
+  for the course Regelungstechnik at the Management Center Innsbruck.
+
+\bibitem{DataSheetMotor}
+{Faulhaber}, ``Dc-kleinstmotoren 73mnm,'' 2023.
 
 \bibitem{DataSheetEncoder}
-V.~Technologies, ``Quick assembly two and three channel optical encoders,''
+{Vago Technologies}, ``Quick assembly two and three channel optical encoders,''
   2012.
 
 \bibitem{DataSheetDAQ}
-N.~Instruments, ``X series user manual,'' 2019.
+{National Instruments}, ``X series user manual,'' 2019.
 
 \bibitem{wikipedia2026}
 \BIBentryALTinterwordspacing
-Wikipedia, ``Pid controller,'' 2026. [Online]. Available:
+Wikipedia. (2026) Pid controller. [Online]. Available:
   \url{https://en.wikipedia.org/wiki/PID_controller#Notes}
 \BIBentrySTDinterwordspacing
 

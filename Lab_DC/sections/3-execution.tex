@@ -2,7 +2,6 @@
 In diesem Kapitel wird der nur der Versuchsaufbau und die Durchführung beschrieben, genaue Werte und die Ergebnisse sind im Kapitel \ref{chap:results} zu finden.
 \subsection{Hardware Setup}
 \label{chap:hardware_setup}
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{images/HardwareSetup.jpeg}
@@ -10,14 +9,12 @@ In diesem Kapitel wird der nur der Versuchsaufbau und die Durchführung beschrie
     \label{fig:HardwareSetup}
 \end{figure}
 Abbildung \ref{fig:HardwareSetup} zeigt den Versuchsaufbau. Das System besteht aus einem 
-Gleichstrommotor, der über ein Getriebe mit einer Übersetzung von $i=73{,}5$ verbunden ist, 
+Gleichstrommotor der Serie 3257 von Faulhaber \cite{DataSheetMotor}, der über ein Getriebe mit einer Übersetzung von $i=73{,}5$ verbunden ist, 
 sowie einem optischen Encoder \cite{DataSheetEncoder}, der die Drehrichtung und Winkelgeschwindigkeit 
 der Ausgangswelle erfasst. Die Spannungsversorgung des Motors erfolgt über einen 12\,V-Anschluss, 
 welcher mit dem entsprechenden Ausgang des Netzgeräts verbunden wird.
 Die Ansteuerung des Motors sowie die Erfassung der Encodersignale übernimmt eine 
-NI PCIe-6321 DAQ-Karte \cite{DataSheetDAQ}. Die Verbindung zwischen der Elektronikbox 
-des Versuchsaufbaus und der Karte erfolgt über ein SCSI-Kabel, welches an das 
-NI BNC-2090a I/O-Modul \cite{DataSheetBNC} angeschlossen wird.
+NI PCIe-6321 DAQ-Karte \cite{DataSheetDAQ}.
 
 \subsection{Software Setup}
 \label{chap:software_setup}
