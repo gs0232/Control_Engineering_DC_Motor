@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.16)  15 JUN 2026 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.16)  15 JUN 2026 15:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1901,7 +1901,7 @@ Package epstopdf Info: Source file: <sub/_definitions/MCI_4C.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=sub/_definitions/MCI_4C-eps-converted-to.pdf sub/_definitions/MCI_4C.eps>
 (epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
-<sub/_definitions/MCI_4C-eps-converted-to.pdf, id=114, 341.275pt x 165.61874pt>
+<sub/_definitions/MCI_4C-eps-converted-to.pdf, id=110, 341.275pt x 165.61874pt>
 File: sub/_definitions/MCI_4C-eps-converted-to.pdf Graphic file (type pdf)
 <use sub/_definitions/MCI_4C-eps-converted-to.pdf>
 Package pdftex.def Info: sub/_definitions/MCI_4C-eps-converted-to.pdf  used on input line 77.
@@ -1915,7 +1915,7 @@ Package epstopdf Info: Source file: <sub/_definitions/header.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=sub/_definitions/header-eps-converted-to.pdf sub/_definitions/header.eps>
 (epstopdf)             \includegraphics on input line 79.
 Package epstopdf Info: Output file is already uptodate.
-<sub/_definitions/header-eps-converted-to.pdf, id=115, 1062.97125pt x 146.5475pt>
+<sub/_definitions/header-eps-converted-to.pdf, id=111, 1062.97125pt x 146.5475pt>
 File: sub/_definitions/header-eps-converted-to.pdf Graphic file (type pdf)
 <use sub/_definitions/header-eps-converted-to.pdf>
 Package pdftex.def Info: sub/_definitions/header-eps-converted-to.pdf  used on input line 79.
@@ -1963,7 +1963,7 @@ Non-PDF special ignored!
 Package babel Info: 'german' activates 'german' shorthands.
 (babel)             Reported on input line 53.
  [2] (sections/1-introduction.tex) [1] (sections/2-preparation.tex
-<images/LabDC_SchemaDCSystem.png, id=168, 443.40656pt x 225.09094pt>
+<images/LabDC_SchemaDCSystem.png, id=163, 443.40656pt x 225.09094pt>
 File: images/LabDC_SchemaDCSystem.png Graphic file (type png)
 <use images/LabDC_SchemaDCSystem.png>
 Package pdftex.def Info: images/LabDC_SchemaDCSystem.png  used on input line 8.
@@ -1971,52 +1971,78 @@ Package pdftex.def Info: images/LabDC_SchemaDCSystem.png  used on input line 8.
  [2
 
  <./images/LabDC_SchemaDCSystem.png>]
-<images/Plot_rawData.png, id=200, 966.009pt x 563.706pt>
+<images/Plot_rawData.png, id=195, 966.009pt x 563.706pt>
 File: images/Plot_rawData.png Graphic file (type png)
 <use images/Plot_rawData.png>
 Package pdftex.def Info: images/Plot_rawData.png  used on input line 105.
 (pdftex.def)             Requested size: 256.07741pt x 149.42438pt.
  [3]
-<images/Vergleich_rawDataPT2.png, id=217, 968.418pt x 566.115pt>
+<images/Vergleich_rawDataPT2.png, id=212, 968.418pt x 566.115pt>
 File: images/Vergleich_rawDataPT2.png Graphic file (type png)
 <use images/Vergleich_rawDataPT2.png>
 Package pdftex.def Info: images/Vergleich_rawDataPT2.png  used on input line 114.
 (pdftex.def)             Requested size: 256.07741pt x 149.6915pt.
-) [4 <./images/Plot_rawData.png (PNG copy)> <./images/Vergleich_rawDataPT2.png (PNG copy)>] (sections/3-execution.tex) [5] (sections/4-result.tex
-<images/res_PT2_StepResponse.jpg, id=232, 783.92876pt x 421.575pt>
+) [4 <./images/Plot_rawData.png (PNG copy)> <./images/Vergleich_rawDataPT2.png (PNG copy)>] (sections/3-execution.tex
+<images/HardwareSetup.jpeg, id=221, 1606.0pt x 755.82375pt>
+File: images/HardwareSetup.jpeg Graphic file (type jpg)
+<use images/HardwareSetup.jpeg>
+Package pdftex.def Info: images/HardwareSetup.jpeg  used on input line 8.
+(pdftex.def)             Requested size: 256.07741pt x 120.50755pt.
+
+
+LaTeX Warning: Citation `DataSheetEncoder' on page 5 undefined on input line 14.
+
+
+LaTeX Warning: Citation `DataSheetDAQ' on page 5 undefined on input line 18.
+
+
+LaTeX Warning: Citation `DataSheetBNC' on page 5 undefined on input line 20.
+
+
+LaTeX Warning: Reference `fig:SimulinkID' on page 5 undefined on input line 37.
+
+
+LaTeX Warning: Reference `fig:RawData' on page 5 undefined on input line 41.
+
+[5 <./images/HardwareSetup.jpeg>]
+
+LaTeX Warning: Reference `chap:4.3' on page 6 undefined on input line 60.
+
+) [6] (sections/4-result.tex
+<images/res_PT2_StepResponse.jpg, id=239, 783.92876pt x 421.575pt>
 File: images/res_PT2_StepResponse.jpg Graphic file (type jpg)
 <use images/res_PT2_StepResponse.jpg>
 Package pdftex.def Info: images/res_PT2_StepResponse.jpg  used on input line 11.
 (pdftex.def)             Requested size: 405.45047pt x 218.04306pt.
- [6 <./images/res_PT2_StepResponse.jpg>]
-<images/res_PID_ControllerImplementation_bad.jpg, id=242, 1445.4pt x 794.2172pt>
+ [7 <./images/res_PT2_StepResponse.jpg>]
+<images/res_PID_ControllerImplementation_bad.jpg, id=249, 1445.4pt x 794.2172pt>
 File: images/res_PID_ControllerImplementation_bad.jpg Graphic file (type jpg)
 <use images/res_PID_ControllerImplementation_bad.jpg>
 Package pdftex.def Info: images/res_PID_ControllerImplementation_bad.jpg  used on input line 57.
 (pdftex.def)             Requested size: 405.45047pt x 222.77922pt.
-<images/Koeffzienten_Tabelle.png, id=245, 537.72322pt x 101.95232pt>
+<images/Koeffzienten_Tabelle.png, id=252, 537.72322pt x 101.95232pt>
 File: images/Koeffzienten_Tabelle.png Graphic file (type png)
 <use images/Koeffzienten_Tabelle.png>
 Package pdftex.def Info: images/Koeffzienten_Tabelle.png  used on input line 66.
 (pdftex.def)             Requested size: 405.45047pt x 76.87317pt.
- [7 <./images/res_PID_ControllerImplementation_bad.jpg> <./images/Koeffzienten_Tabelle.png>]
-<images/res_PID_ControllerImplementation_perfect.jpg, id=255, 1445.4pt x 794.2172pt>
+ [8 <./images/res_PID_ControllerImplementation_bad.jpg> <./images/Koeffzienten_Tabelle.png>]
+<images/res_PID_ControllerImplementation_perfect.jpg, id=262, 1445.4pt x 794.2172pt>
 File: images/res_PID_ControllerImplementation_perfect.jpg Graphic file (type jpg)
 <use images/res_PID_ControllerImplementation_perfect.jpg>
 Package pdftex.def Info: images/res_PID_ControllerImplementation_perfect.jpg  used on input line 77.
 (pdftex.def)             Requested size: 405.45047pt x 222.77922pt.
-<images/res_PID_OutputComparison.jpg, id=258, 1164.0288pt x 708.246pt>
+<images/res_PID_OutputComparison.jpg, id=265, 1164.0288pt x 708.246pt>
 File: images/res_PID_OutputComparison.jpg Graphic file (type jpg)
 <use images/res_PID_OutputComparison.jpg>
 Package pdftex.def Info: images/res_PID_OutputComparison.jpg  used on input line 86.
 (pdftex.def)             Requested size: 405.45047pt x 246.69023pt.
- [8 <./images/res_PID_ControllerImplementation_perfect.jpg>]
-<images/res_PID_ErrorComparison.png, id=265, 1164.0288pt x 708.246pt>
+ [9 <./images/res_PID_ControllerImplementation_perfect.jpg>]
+<images/res_PID_ErrorComparison.png, id=272, 1164.0288pt x 708.246pt>
 File: images/res_PID_ErrorComparison.png Graphic file (type png)
 <use images/res_PID_ErrorComparison.png>
 Package pdftex.def Info: images/res_PID_ErrorComparison.png  used on input line 93.
 (pdftex.def)             Requested size: 405.45047pt x 246.69023pt.
-) [9 <./images/res_PID_OutputComparison.jpg (PNG copy)> <./images/res_PID_ErrorComparison.png (PNG copy)>] (LAB_DC.bbl) [3] (LAB_DC.lof)
+) [10 <./images/res_PID_OutputComparison.jpg (PNG copy)> <./images/res_PID_ErrorComparison.png (PNG copy)>] (LAB_DC.bbl) [3] (LAB_DC.lof)
 \tf@lof=\write10
 \openout10 = `LAB_DC.lof'.
 
@@ -2045,21 +2071,25 @@ Package minitoc(hints) Warning: W0024
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `LAB_DC.out' has not changed.
-(rerunfilecheck)             Checksum: 124F3C59FBAF4DB714F1946FAC59E7F2;3306.
+(rerunfilecheck)             Checksum: 914DE482FA606FED8FCF9E8ADB5C593A;3115.
  ) 
 Here is how much of TeX's memory you used:
- 75075 strings out of 467871
- 1865529 string characters out of 5418375
+ 75096 strings out of 467871
+ 1865954 string characters out of 5418375
  2836656 words of memory out of 5000000
- 102772 multiletter control sequences out of 15000+600000
- 650871 words of font info for 90 fonts, out of 8000000 for 9000
+ 102789 multiletter control sequences out of 15000+600000
+ 651185 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,13n,124p,845b,1158s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1200.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ecsx0800.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcsx0600.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx0800.pk><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on LAB_DC.pdf (14 pages, 980237 bytes).
+ <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1200.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ecsx0800.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcsx0600.pk> <C:\Users\doell\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx0800.pk><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/doell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on LAB_DC.pdf (15 pages, 1117137 bytes).
 PDF statistics:
- 837 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 356 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 887 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

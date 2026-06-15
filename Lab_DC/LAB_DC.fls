@@ -1217,6 +1217,14 @@ INPUT .\images\Vergleich_rawDataPT2.png
 INPUT .\sections\3-execution.tex
 INPUT .\sections\3-execution.tex
 INPUT sections\3-execution.tex
+INPUT .\images\HardwareSetup.jpeg
+INPUT .\images\HardwareSetup.jpeg
+INPUT .\images\HardwareSetup.jpeg
+INPUT .\images\HardwareSetup.jpeg
+INPUT .\images\HardwareSetup.jpeg
+INPUT .\images\HardwareSetup.jpeg
+INPUT .\images\HardwareSetup.jpeg
+INPUT C:\Users\doell\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1095.tfm
 INPUT .\sections\4-result.tex
 INPUT .\sections\4-result.tex
 INPUT sections\4-result.tex
@@ -1279,6 +1287,8 @@ INPUT .\LAB_DC.mtc
 INPUT LAB_DC.aux
 INPUT .\LAB_DC.out
 INPUT .\LAB_DC.out
+INPUT C:\Users\doell\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
+INPUT C:\Users\doell\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\doell\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk
 INPUT C:\Users\doell\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk
 INPUT C:\Users\doell\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
