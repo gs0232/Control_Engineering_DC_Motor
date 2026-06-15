@@ -58,3 +58,25 @@ Integration von $\omega$ zu $\theta$ erweitert werden. Es ergibt sich ein PT3-Sy
 
 $G_p(s)$ beschreibt den Zusammenhang zwischen $u$ und $\theta$ und bildet die Grundlage für 
 den Regler in Kapitel \ref{chap:result_step_response} PT2 - Step Response. 
+
+\subsection{Controller Design}
+
+Auf Basis der in Kapitel \ref{chap:identification} bestimmten PT3-Übertragungsfunktion wurde anschließend der PID-Controller ausgelegt. Die PT3-Übertragungsfunktion beschreibt dabei das Verhalten der Winkelposition in Abhängigkeit der Eingangsspannung und dient somit als Grundlage für das Controller Design.
+
+Die verwendete Übertragungsfunktion lautet:
+
+\begin{equation}
+    G_{PT3}(s)=\frac{0.7073}{0.00209s^3+0.09144s^2+s}
+\end{equation}
+
+Zur Berechnung der PID-Koeffizienten wurde die Ziegler-Nichols-Methode verwendet. Dafür wurde zuerst mithilfe der Root-Locus-Methode der Gain bestimmt, bei welchem das System kurz vor einem überschwingenden beziehungsweise instabilen Verhalten liegt. In diesem Fall beträgt K etwa 61,85. Aus diesem Wert konnten anschließend die Koeffizienten für den PID-Controller berechnet werden.
+
+\vspace{0.3cm}
+
+Die berechneten Werte lauten:
+
+\begin{equation}
+    K_p = 37,11, \qquad K_i = 0,1435, \qquad K_d = 0,035875
+\end{equation}
+
+Diese Werte wurden anschließend in das Simulink-Modell eingebaut und am realen System getestet. Dabei zeigte sich, dass die berechneten Koeffizienten noch nicht das gewünschte Systemverhalten lieferten. Aus diesem Grund wurden die Werte in einem weiteren Schritt angepasst, um den Overshoot zu reduzieren und den Steady-State-Error möglichst auf null zu bringen.

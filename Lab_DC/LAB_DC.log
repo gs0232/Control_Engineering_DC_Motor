@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.14)  15 JUN 2026 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.14)  15 JUN 2026 18:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1790,7 +1790,7 @@ Package epstopdf Info: Source file: <sub/_definitions/MCI_4C.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=sub/_definitions/MCI_4C-eps-converted-to.pdf sub/_definitions/MCI_4C.eps>
 (epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
-<sub/_definitions/MCI_4C-eps-converted-to.pdf, id=106, 341.275pt x 165.61874pt>
+<sub/_definitions/MCI_4C-eps-converted-to.pdf, id=110, 341.275pt x 165.61874pt>
 File: sub/_definitions/MCI_4C-eps-converted-to.pdf Graphic file (type pdf)
 <use sub/_definitions/MCI_4C-eps-converted-to.pdf>
 Package pdftex.def Info: sub/_definitions/MCI_4C-eps-converted-to.pdf  used on input line 77.
@@ -1804,7 +1804,7 @@ Package epstopdf Info: Source file: <sub/_definitions/header.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=sub/_definitions/header-eps-converted-to.pdf sub/_definitions/header.eps>
 (epstopdf)             \includegraphics on input line 79.
 Package epstopdf Info: Output file is already uptodate.
-<sub/_definitions/header-eps-converted-to.pdf, id=107, 1062.97125pt x 146.5475pt>
+<sub/_definitions/header-eps-converted-to.pdf, id=111, 1062.97125pt x 146.5475pt>
 File: sub/_definitions/header-eps-converted-to.pdf Graphic file (type pdf)
 <use sub/_definitions/header-eps-converted-to.pdf>
 Package pdftex.def Info: sub/_definitions/header-eps-converted-to.pdf  used on input line 79.
@@ -1852,7 +1852,7 @@ Non-PDF special ignored!
 Package babel Info: 'german' activates 'german' shorthands.
 (babel)             Reported on input line 53.
  [2] (sections/1-introduction.tex) [1] (sections/2-preparation.tex
-<images/LabDC_SchemaDCSystem.png, id=158, 443.40656pt x 225.09094pt>
+<images/LabDC_SchemaDCSystem.png, id=163, 443.40656pt x 225.09094pt>
 File: images/LabDC_SchemaDCSystem.png Graphic file (type png)
 <use images/LabDC_SchemaDCSystem.png>
 Package pdftex.def Info: images/LabDC_SchemaDCSystem.png  used on input line 8.
@@ -1860,19 +1860,19 @@ Package pdftex.def Info: images/LabDC_SchemaDCSystem.png  used on input line 8.
  [2
 
  <./images/LabDC_SchemaDCSystem.png>]
-<images/Plot_rawData.png, id=190, 565.1514pt x 360.8682pt>
+<images/Plot_rawData.png, id=195, 565.1514pt x 360.8682pt>
 File: images/Plot_rawData.png Graphic file (type png)
 <use images/Plot_rawData.png>
 Package pdftex.def Info: images/Plot_rawData.png  used on input line 104.
 (pdftex.def)             Requested size: 256.07741pt x 163.51799pt.
  [3]
-<images/Vergleich_rawDataPT2.png, id=207, 567.5604pt x 360.8682pt>
+<images/Vergleich_rawDataPT2.png, id=212, 567.5604pt x 360.8682pt>
 File: images/Vergleich_rawDataPT2.png Graphic file (type png)
 <use images/Vergleich_rawDataPT2.png>
 Package pdftex.def Info: images/Vergleich_rawDataPT2.png  used on input line 113.
 (pdftex.def)             Requested size: 256.07741pt x 162.82419pt.
 ) [4 <./images/Plot_rawData.png (PNG copy)> <./images/Vergleich_rawDataPT2.png (PNG copy)>] (sections/3-execution.tex
-<images/HardwareSetup.jpeg, id=217, 1606.0pt x 755.82375pt>
+<images/HardwareSetup.jpeg, id=222, 1606.0pt x 755.82375pt>
 File: images/HardwareSetup.jpeg Graphic file (type jpg)
 <use images/HardwareSetup.jpeg>
 Package pdftex.def Info: images/HardwareSetup.jpeg  used on input line 7.
@@ -1885,19 +1885,19 @@ LaTeX Warning: Reference `fig:SimulinkID' on page 5 undefined on input line 35.
 LaTeX Warning: Reference `fig:RawData' on page 5 undefined on input line 40.
 
 [5 <./images/HardwareSetup.jpeg>]) [6] (sections/4-result.tex
-<images/res_PT2_StepResponse.jpg, id=241, 783.92876pt x 421.575pt>
+<images/res_PT2_StepResponse.jpg, id=249, 783.92876pt x 421.575pt>
 File: images/res_PT2_StepResponse.jpg Graphic file (type jpg)
 <use images/res_PT2_StepResponse.jpg>
 Package pdftex.def Info: images/res_PT2_StepResponse.jpg  used on input line 11.
 (pdftex.def)             Requested size: 405.45047pt x 218.04306pt.
  [7 <./images/res_PT2_StepResponse.jpg>]
-<plots/res_PID_Comparison.png, id=251, 701.019pt x 524.6802pt>
+<plots/res_PID_Comparison.png, id=259, 701.019pt x 524.6802pt>
 File: plots/res_PID_Comparison.png Graphic file (type png)
 <use plots/res_PID_Comparison.png>
 Package pdftex.def Info: plots/res_PID_Comparison.png  used on input line 40.
 (pdftex.def)             Requested size: 405.45047pt x 303.4661pt.
  [8 <./plots/res_PID_Comparison.png (PNG copy)>]
-<images/Koeffzienten_Tabelle.png, id=262, 537.72322pt x 101.95232pt>
+<images/Koeffzienten_Tabelle.png, id=270, 537.72322pt x 101.95232pt>
 File: images/Koeffzienten_Tabelle.png Graphic file (type png)
 <use images/Koeffzienten_Tabelle.png>
 Package pdftex.def Info: images/Koeffzienten_Tabelle.png  used on input line 70.
@@ -1936,20 +1936,20 @@ L3 programming layer <2025-11-06>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `LAB_DC.out' has not changed.
-(rerunfilecheck)             Checksum: C01C3ECBDDD4396B854DA92051C099EF;2968.
+(rerunfilecheck)             Checksum: 8561F881FE7E962FC1C1B0973A43C5F0;3114.
  ) 
 Here is how much of TeX's memory you used:
- 75071 strings out of 467871
- 1863833 string characters out of 5418375
+ 75075 strings out of 467871
+ 1863885 string characters out of 5418375
  2836430 words of memory out of 5000000
- 102765 multiletter control sequences out of 15000+600000
+ 102766 multiletter control sequences out of 15000+600000
  651526 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,13n,124p,807b,1158s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1200.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ecsx0800.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcsx0600.pk> <C:\Users\gwigg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx0800.pk><C:/Users/gwigg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/gwigg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/gwigg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gwigg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/gwigg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gwigg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gwigg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on LAB_DC.pdf (14 pages, 739167 bytes).
+Output written on LAB_DC.pdf (14 pages, 741547 bytes).
 PDF statistics:
- 877 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 330 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 886 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 338 words of extra memory for PDF output out of 10000 (max. 10000000)
 
