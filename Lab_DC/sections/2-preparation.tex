@@ -19,23 +19,26 @@ Dabei sollen folgende Übertragungsfunktionen bestimmt werden:
     \label{eq:DC_TransferFunctions2}
     G_{\text{p2}}(s) = \frac{Angular Velocity(s)}{Voltage(s)} = \frac{\Omega(s)}{U_{in}(s)}
 \end{equation}
+\newline
 Die Gleichungen des Systems können durch die Anwendung der Kirchhoff'schen Gesetze und der mechanischen Gleichungen abgeleitet werden.
 Die elektrische Gleichung des Systems lautet:
 \begin{equation}
     \label{eq:DC_ElectricalEquation}
     U_{in} = R_{mot} \cdot i + L_{mot} \cdot \frac{di}{dt} + U_{emf}
 \end{equation}
+\newline
 Wobei die Spannung $U_{emf}$ durch die Gleichung
 \begin{equation}
     \label{eq:DC_EMF}
     U_{emf} = k_e \cdot \dot{\theta}
 \end{equation}
+\newline
 beschrieben wird. Die mechanische Gleichung des Systems lautet, wenn $J_{load}=0,\ b_{load}=0$ angenommen werden:
 \begin{equation}
     \label{eq:DC_MechanicalEquation}
     J_{mot} \cdot \ddot{\theta} = k_t \cdot i - b_{mot} \cdot \dot{\theta}
 \end{equation}
-
+\newline
 Um aus den Grundgleichungen \ref{eq:DC_ElectricalEquation} und \ref{eq:DC_MechanicalEquation} die Transferfunktionen zu erhalten, werden die Gleichungen in den Laplace-Raum transformiert:
 \newline
 Elektrisch: 
@@ -48,24 +51,26 @@ Mechanisch:
     \label{eq:DC_MechanicalEquationLaplace}
     \quad I(s) = \frac{J_{mot} s^2 + b_{mot} s}{k_t} \cdot \Theta(s)
 \end{equation}
-
+\newline
 Danach wird die  Gleichung \ref{eq:DC_ElectricalEquationLaplace} nach $I(s)$ und die zweite Gleichung \ref{eq:DC_MechanicalEquationLaplace} nach $\Theta(s)$ aufgelöst, um die Transferfunktion \ref{eq:DC_TransferFunctions} zu erhalten:
 \begin{equation}
     \label{eq:DC_TransferFunction1_final}
     G_{p1}(s) = \frac{k_t}{s \cdot (L_{mot} \cdot J_{mot} \cdot s^2 + (R_{mot} \cdot J_{mot} + L_{mot} \cdot b_{mot}) \cdot s + (R_{mot} \cdot b_{mot} + k_e \cdot k_t))}
 \end{equation}
-
+\newline
 Der Faktor $s$ im Nenner entspricht dem Integrierer, da die reine Rotation ohne Rückstellkraft betrachtet wird.
 Daraus folgt:
 \begin{equation}
     \label{eq:DC_TransferFunction_step}
     \Omega(s) = s\cdot\Theta(s)
 \end{equation}
+\newline
 Somit kann die zweite Übertragungsfunktion \ref{eq:DC_TransferFunctions2} aus der ersten finalen Transferfunktion, die in Gleichung \ref{eq:DC_TransferFunction1_final} beschrieben ist, bestimmt werden:
 \begin{equation}
     \label{eq:DC_TransferFunction2_final}
     G_{p2}(s) = \frac{k_t}{L_{mot} \cdot J_{mot} \cdot s^2 + (R_{mot} \cdot J_{mot} + L_{mot} \cdot b_{mot}) \cdot s + (R_{mot} \cdot b_{mot} + k_e \cdot k_t)}
 \end{equation}
+
 
 \subsubsection{Aufstellen des State-Space Modells}
 Ausgehend von $G_{p1}$, Gleichung \ref{eq:DC_TransferFunction1_final}, kann das State-Space Modell des Systems aufgestellt werden. Dazu werden die Zustandsvariablen definiert als:
@@ -79,6 +84,7 @@ Die Zustandsraumdarstellung des Systems kann dann in der Form
     \dot{\mathbf{x}}(t) &= \mathbf{A} \mathbf{x}(t) + \mathbf{B} u(t) \\
     y(t) &= \mathbf{C} \mathbf{x}(t) + \mathbf{D} u(t)
 \end{align}
+\newline
 aufgestellt werden, wobei $\mathbf{x}(t) = [x_1(t), x_2(t), x_3(t)]^T$ der Zustandsvektor, $u(t)$ die Eingangsgröße und $y(t)$ die Ausgangsgröße ist.
 Die Matrizen $\mathbf{A}$, $\mathbf{B}$, $\mathbf{C}$ und $\mathbf{D}$ können durch die Umformung der Gleichungen \ref{eq:DC_ElectricalEquation} und \ref{eq:DC_MechanicalEquation} in die Zustandsraumdarstellung bestimmt werden. 
 Die aus den physikalischen Gleichungen resultierenden Zustandsgleichungen lauten:
@@ -86,14 +92,15 @@ Die aus den physikalischen Gleichungen resultierenden Zustandsgleichungen lauten
     \label{eq:DC_StateSpaceEquations}
     \dot{x}_1 = x_2 , \quad \dot{x}_2 = -\frac{b_{mot}}{J_{mot}}x_2 + \frac{k_t}{J_{mot}}x_3, \quad \dot{x}_3 = -\frac{k_e}{L_{mot}}x_2 - \frac{R_{mot}}{L_{mot}}x_3 + \frac{1}{L_{mot}}U_{in}
 \end{equation}
-
+\newline
 In der Matrixdarstellung ergibt sich somit die folgende Form für die Matrizen $\mathbf{A}$, $\mathbf{B}$, $\mathbf{C}$ und $\mathbf{D}$:
 \begin{equation}
     \label{eq:DC_StateSpaceMatrices}
     \mathbf{A} = \begin{pmatrix} 0 & 1 & 0 \\ 0 & -\dfrac{b_{mot}}{J_{mot}} & \dfrac{k_t}{J_{mot}} \\ 0 & -\dfrac{k_e}{L_{mot}} & -\dfrac{R_{mot}}{L_{mot}} \end{pmatrix}, \quad \mathbf{B} = \begin{pmatrix} 0 \\ 0 \\ \dfrac{1}{L_{mot}} \end{pmatrix}, \quad \mathbf{C} = \begin{pmatrix} 1 & 0 & 0 \end{pmatrix}, \quad \mathbf{D} = 0
 \end{equation}
+\newline
 Das resultierende State-Space Modell ermöglicht nun die Analyse und das Design von Regelungsstrategien für das DC-System.
-
+\newline
 
 \subsection{Identifikation der Systemparameter}
 WIE REFERENZIEREN WIR HIER DIE DATEN UND DAS MATLAB-SKRIPT
